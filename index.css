@@ -1,0 +1,610 @@
+*{
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    overflow-x: hidden;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    width: 100vw;
+    height: 2000px;
+}
+
+/*Header*/
+
+.main__header{
+    padding: 10px;
+    position: relative;
+    z-index: 999;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background-color: transparent;
+}
+
+.main__header--brand{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.img__header--brand{
+    margin: 0 20px;
+}
+
+.main__btn--hamburguer{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.main__btn--hamburguer:focus{
+    outline: none;
+}
+
+.main__nav--itens{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main__nav--item{
+    margin: 0 1rem;
+}
+
+.main__nav--item a{
+    color: white;
+    text-decoration: none;
+}
+
+.main__nav--line{
+    background: white;
+    width: 33.22px;
+    border: 1px solid white;
+    -webkit-transform: rotateZ(90deg);
+        -ms-transform: rotate(90deg);
+            transform: rotateZ(90deg);
+}
+
+.hamburguer_Table{
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 30vw;
+    position: relative;
+    top: 2rem;
+    text-align: center;
+    left: 1.8rem;
+    padding: 10px;
+    background-color: #084154;
+    border:2px solid #3EC6E0;
+    opacity: 0;
+    display: none;
+    -webkit-transform: translateX(-100vw);
+        -ms-transform: translateX(-100vw);
+            transform: translateX(-100vw);
+    -webkit-transition: ease 500ms;
+    -o-transition: ease 500ms;
+    transition: ease 500ms;
+    z-index: 1000;
+    min-width: 388px;
+    min-height: 175px;
+}
+
+.table__responsive--item{
+    padding: 10px 25px;
+}
+
+.hamburguer_Table a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Main */ 
+
+main{
+    position: absolute;
+    top: 0;
+}
+
+.conteiner1{
+    position: relative;
+    top: 0;
+    width: 100vw;
+    z-index: 1;
+}
+
+.anuncio1,
+.anuncio1__responsive,
+.anuncio2__responsive,
+.anuncio2{
+    position: relative;
+}
+
+.anuncio1 img,
+.anuncio2 img {
+    width: 100vw;
+}
+
+.banner1__responsive,
+.banner1__responsive img{
+    display: none !important;
+    width: 100vw;
+}
+
+.first__carouselimg--informations{
+    position: absolute;
+    top: 35%;
+    right: 8%;
+    color: white;
+    z-index: 1;
+    text-align: center;
+    min-width: 365px;
+    width: 30vw;
+}
+
+.titulo_anuncio{
+    font: 3rem "Roboto";
+    margin: 0;
+}
+
+.valor_anuncio{
+    font: 5rem "Roboto";
+    color: #3EC6E0;
+    margin: 0;
+}
+
+.first__carouselimg--seal{
+    position: absolute;
+    z-index: 1;
+    top: 20vh;
+    right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    color: white;    
+}
+
+.first__carouselimg--seal-name{
+    background-color: #3EC6E0;
+    padding: 15px;
+    height: 30vh;
+    -webkit-writing-mode: vertical-lr;
+        -ms-writing-mode: tb-lr;
+            writing-mode: vertical-lr;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    max-height: none;
+}
+
+.first__carouselimg--seal-line{
+    background: white;
+    width: 33.22px;
+    border: 1px solid white;
+    -webkit-transform: rotateZ(90deg);
+        -ms-transform: rotate(90deg);
+            transform: rotateZ(90deg);
+    margin: 30px 0 0 0;
+}
+
+.first__carouselimg--seal-type{
+    padding: 22px;
+    height: 15vh;
+    text-align: center;
+    -webkit-writing-mode: vertical-lr;
+        -ms-writing-mode: tb-lr;
+            writing-mode: vertical-lr;
+    background-color: #084154;
+    max-height: none;
+}
+
+.main__list--othergames{
+    margin: 4rem 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100vw;
+}
+
+.main__list--othergames-item img{
+    width: 40vw;
+    margin: 0 20px;
+}
+
+.main__list--dols{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    
+}
+
+.produtoDesq{
+    width:60vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding: 0 0 0 1rem;
+    margin: 4rem 0 0 0;
+}
+
+.quadradoDesq{
+    background-color: #3EC6E0;
+    width: 10px;
+    height: 10px;
+    margin: 0 1rem 0 0;
+    min-width: 10px;
+}
+
+.produtoDesq a{
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: #084154;
+}
+
+.banner3{
+    width: 60vw;
+    margin: 3rem 0;
+}
+
+.banner3__responsive,
+.banner3__responsive img{
+    width: 60vw;
+    margin: 2rem 0 0 0;
+    display: none !important;
+}
+
+.doll{
+    text-align: center;
+    margin: 0 1rem;
+    width: 20vw;
+    padding: 5px;
+    outline: none;
+}
+
+.doll img{
+    width: 100%;
+    border: 2px solid grey;
+}
+
+.doll h4{
+    color: #084154;
+    font-size: 1.3rem;
+}
+
+.doll h2{
+    color: #084154;
+    font-size: 1.9rem;
+}
+
+.doll a{
+    text-decoration: none;
+    font-size: 1.8rem;
+    padding: 8px 18px;
+    color: white;
+    background-color: #3EC6E0;
+    border: none;
+    border-radius: 10px;
+}
+
+.main__footer{
+    position: absolute;
+    bottom: 0;
+}
+
+.main__footer--content{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100vw;
+}
+
+.main__footer--brand{
+    height: 8vh;
+    padding: 0 20px 0 0;
+    width: 30vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #084154;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+}
+
+
+
+.main__footer--informations{
+    padding: 0 0 0 20px;
+    width: 70vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #3EC6E0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 8vh;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    color: white;
+    font-size: 1rem;
+}
+
+
+/* Media */
+
+@media(max-width:1085px){
+    .titulo_anuncio{
+        font: 2rem "Roboto";
+    }
+
+    .valor_anuncio{
+        font: 3rem "Roboto";
+        color: #3EC6E0;
+    }
+
+    .first__carouselimg--seal{
+        top: 10vh; 
+    }
+    
+    .doll h4{
+        color: #084154;
+        font-size: 1rem;
+    }
+
+    .doll h2{
+        color: #084154;
+        font-size: 1.5rem;
+    }
+
+    .doll a{
+        font-size: 1.8rem;
+        padding: 7px;
+    }
+}
+
+@media(max-width:855px){
+    body{
+        height: 1500px;
+    }
+   
+    .first__carouselimg--informations{
+        top: 3.5rem;
+        right: 1rem;
+    }
+
+    .titulo_anuncio{
+        font: 1.5rem "Roboto";
+    }
+
+    .valor_anuncio{
+        font: 2rem "Roboto";
+        color: #3EC6E0;
+    }
+
+    .first__carouselimg--seal{
+        top: initial;
+        right: initial;
+        left: 0;
+        bottom: 0;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+        -webkit-box-orient:horizontal;
+        -webkit-box-direction:normal;
+            -ms-flex-direction:row;
+                flex-direction:row;
+        width: 100vw;
+    }
+    
+    .first__carouselimg--seal-name{
+        background-color: #3EC6E0;
+        height: auto;
+        width: 60vw;
+        -webkit-writing-mode: initial;
+            -ms-writing-mode: initial;
+                writing-mode: initial;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+        padding: 10px 10px 10px 1rem;
+        max-height: 38px;
+    }
+
+    .first__carouselimg--seal-line{
+        background: white;
+        text-align: center;
+        width: 30vw;
+        -webkit-transform: rotateZ(0);
+            -ms-transform: rotate(0);
+                transform: rotateZ(0);
+        margin: 0 0 0 6rem;
+    }
+
+    .first__carouselimg--seal-type{
+        padding: 10px;
+        -webkit-writing-mode: initial;
+            -ms-writing-mode: initial;
+                writing-mode: initial;
+        background-color: #084154;
+        width: 40vw;
+        height: auto;
+        max-height: 38px;
+    }
+
+    .doll a{
+        font-size: 1.2rem;
+    }
+}
+
+@media(max-width:640px){
+    body{
+        height: 2000px;
+    }
+
+    .hamburguer_Table{
+        width: 100vw;
+        top: 0;
+        left: 0;
+        min-width: none;
+    }
+
+    .table__responsive--item{
+        padding: 5px 5px;
+    }
+
+    .titulo_anuncio{
+        font: 1rem "Roboto";
+    }
+
+    .valor_anuncio{
+        font: 1.3rem "Roboto";
+        color: #3EC6E0;
+    }
+
+    .texto_anuncio{
+        margin: 2px 0;
+    }
+
+    .main__list--othergames{
+        margin: 1.8rem 0;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    
+    .main__list--othergames-item img{
+        width: 85vw;
+        margin: 20px 0;
+    }
+
+    .produtoDesq{
+        margin: 4rem 0 0 0;
+        padding: 0;
+    }
+    
+    .produtoDesq a{
+        font-size: 1rem;
+    }
+
+    .banner3,
+    .banner3 img{
+        display: none !important;
+    }
+
+    .banner3__responsive,
+    .banner3__responsive img{
+        display: block !important;
+    }
+
+    
+}
+
+@media(max-width:520px){
+    .img__header--brand{
+        margin: 0 ;
+    }
+    
+    .main__nav--item{
+        margin: 0 0.4rem;
+    }
+    
+    .main__nav--line{
+        display: none;
+        -webkit-box-pack:start;
+            -ms-flex-pack:start;
+                justify-content:flex-start;
+    }
+
+    .first__carouselimg--informations{
+        top: auto;
+        bottom: 5rem;
+        right: 1rem;
+    }
+
+    .banner1{
+        display: none !important;
+    }
+
+    .banner1__responsive,
+    .banner1__responsive img{
+        display: block !important ;
+    }
+    
+}
+
+@media(max-width:375px){
+    .first__carouselimg--informations{
+        bottom: 3rem;
+        min-width: 50vw;
+    }
+}

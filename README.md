@@ -9,8 +9,12 @@ I developed this website with JavaScript,Html and Css and it's just a frontend p
 
 
 ### How is the site?
- 
+  #### Index:
    ![](site-jogos.gif)
+   
+  #### Responsive:
+   ![](responsive.gif)
+  
    
 
 ### Stack 
